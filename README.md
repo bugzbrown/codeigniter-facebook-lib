@@ -105,3 +105,9 @@ echo $retval[0]['name'];
 echo '&lt;a href="' . $this->fb->logout_url . '">Logout&lt;/a>';
 </pre>
 
+
+## Replacing the Facebook SDK
+Facebook is quite active with it's SDK, usually releasing a new version every copuple of months. I will try to keep the module
+up to date with the latest stable release of the SDK, but, in case you need to upgrade (assuming you can't run git on your server or something like that),
+all you need to do is copy the files in the **src** directory in the <a href="https://github.com/facebook/facebook-php-sdk">facebook-php-sdk</a> to the folder **fb-php-sdk**.
+
