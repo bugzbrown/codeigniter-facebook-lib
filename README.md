@@ -77,7 +77,10 @@ In any of your controllers you can initialize the facebook object like this:
 <pre lang="php">
 $this->fb->init_facebook();
 </pre>
-This will automatically check to see if the user is logged and authenticated with your app, if he is not, it will do the authentication thingy with facebook, and redirect the user back to the canvas page.
+This will automatically check to see if the user is logged and authenticated with your app, if he is not, 
+it will do the authentication thingy with facebook, and redirect the user back to the canvas page.
+This action now also sets a cookie on the user machine with the current Signed Request. This is required when you 
+navigate through pages on your app. CI will loose the Signed Request and make your app navigate back to it's initial controller.
 
 Once the user is authenticated, it will create a couple of necessary objects that can be used:
 
